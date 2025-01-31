@@ -1,0 +1,392 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: rgba(146, 155, 155, 0.226);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.logo {
+  /* border: 2px solid blanchedalmond; */
+  padding: 10px 16px;
+  margin: 10px;
+  cursor: pointer;
+  margin-top: 2%;
+}
+.input {
+  /* border: 5px solid gold; */
+  padding: 5px 10px;
+  width: 30%;
+  display: flex;
+  position: relative;
+  /* border: none;
+  outline: none; */
+}
+.inputIcon {
+  cursor: pointer;
+  /* border: 2px solid darkblue; */
+  height: fit-content;
+}
+.input input {
+  border: 5px solid gold;
+  padding: 4px 13px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  outline: 0;
+}
+
+/* Search-item */
+.Search-item {
+  position: absolute;
+  height: 40vh;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid gainsboro;
+  top: 10%;
+  border-top: 1px solid gray;
+  width: 20%;
+  margin-left: -30%;
+  padding: 19px;
+  /* display: none; */
+}
+
+.Search-item p {
+  font-weight: 600;
+  /* padding: 10px; */
+}
+
+.Search-item-list{
+  /* border: 2px solid firebrick; */
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  cursor: pointer;
+}
+.Search-item-list p {
+  /* border: 1px solid red; */
+  font-size: 1rem;
+  color: grey;
+  
+}
+.fa-magnifying-glass{
+  font-weight: lighter;
+  color: grey;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+nav {
+  /* border: 2px solid black; */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  height: 18vh;
+}
+nav ul {
+  /* border: 2px solid firebrick; */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0px 13px;
+}
+nav ul li {
+  padding: 19px 29px;
+  margin: 0px 11px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  line-height: 29px;
+  cursor: pointer;
+}
+nav ul li button {
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  display: block;
+  overflow: hidden;
+  padding: 10px 11px;
+}
+button:hover {
+  box-sizing: border-box;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.drop:hover {
+  transform: rotate(180deg);
+}
+/* ItemBar */
+.itemBar {
+  /* border: 2px solid gold; */
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3%;
+  padding: 20px 11px;
+  margin: auto;
+  height: 28vh;
+  width: fit-content;
+  position: relative;
+  top: 12px;
+}
+.itemBar a {
+  cursor: pointer;
+  padding: 15px 10px;
+  /* border: 3px solid salmon; */
+  width: fit-content;
+  height: fit-content;
+}
+.itemBar p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+/* Pictur */
+.picture {
+  /* border: 2px solid goldenrod; */
+  margin: 30px;
+  display: flex;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+}
+.img img {
+  width: 100%;
+  height: 40vh;
+  border-radius: 8px;
+}
+
+/* Deals */
+.Deals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 2px 10px;
+}
+.Deals h1 {
+  /* border: 2px solid firebrick; */
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  margin: 10px;
+  font-family: serif;
+  font-weight: 700;
+}
+.mainCard {
+  /* border: 3px solid orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: fit-content;
+  padding: 2px 13px;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.card p,
+span {
+  font-size: 15px;
+  padding: 8px 2px;
+}
+.card span {
+  font-weight: 600;
+}
+.card img {
+  width: 120px;
+  margin: auto;
+  height: 23vh;
+}
+
+.left {
+  /* display: flex; */
+  height: 45vh;
+  width: 80%;
+  /* border: 2px solid black; */
+}
+.right {
+  height: 50vh;
+  width: 20%;
+  /* border: 3px solid green; */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+}
+.right img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: contain;
+}
+.right p {
+  font-weight: 600;
+  padding: -19px 11px;
+  margin-bottom: -5% 2%;
+  text-align: center;
+}
+/* Images */
+.images{
+  /* border: 3px solid gray; */
+  height: 40vh;
+  width: fit-content;
+  display: flex;
+  gap: 1%;
+  margin: 3%;
+  justify-content: center;
+  align-items: center;
+}
+.pic{
+/* border: 2px solid green; */
+height: 40vh;
+width: fit-content;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pic img{
+  width: 100%;
+  height: fit-content;
+  border-radius: 8px;
+}
+/* Deals 2 */
+.Deals-2{
+  /* border: 3px solid green; */
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  align-items: center;
+  margin: 1%;
+}
+.Deals-2 h1{
+  /* border: 2px solid salmon; */
+  font-size: 1.7rem;
+  padding: 13px;
+  font-family: serif;
+  font-weight: 600;
+}
+.mainCard-2{
+  /* border: 1px sold grey; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+  cursor: pointer;
+
+}
+.mainCard-2:hover{
+  transform: scale(1);
+}
+/* para */
+.para{
+  /* border: 2px solid green; */
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1%;
+  background-color: rgb(24, 24, 26);
+}
+
+.para-left{
+  /* border: 2px solid darkgoldenrod; */
+  width: 60%;
+  /* border: 2px solid darkcyan; */
+
+}
+.para-left .ul{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10%;
+  text-decoration: none;
+  font-weight: 600;
+  color: grey; 
+  margin: 5% 2px; 
+  /* width: 100%; */
+}
+.ul li{
+  /* border: 2px solid firebrick; */
+  list-style: none;
+}
+
+
+/* para-right */
+.para-right{
+  /* border: 3px solid hotpink; */
+  width: 40%;
+}
+.para-right .ul{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10%;
+  text-decoration: none;
+  font-weight: 600;
+  color: grey; 
+  margin: 6.5% 2px; 
+}
+
+.fotter-para{
+  margin: 10% 2px;
+  padding-top: 4%;
+  width: 100%;
+  height: 20vh;
+
+}
+.fotter-para p{
+  /* border: 2px solid darkgoldenrod; */
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.fa-brands {
+  color: white;
+  font-size: larger;
+  padding-top: 19px;
+  cursor: pointer;
+}
+.fa-brands:hover{
+  color: rgba(40, 167, 252, 0.438);
+}
+.fa-instagram{
+  color: white;
+  font-size: larger;
+  padding-top: 19px;
+  cursor: pointer;
+  padding: 1% 15%;
+}
+.fa-instagram:hover{
+  color: rgb(179, 62, 16);
+}
+.fa-twitter{
+  color: white;
+  font-size: larger;
+  padding-top: 19px;
+  cursor: pointer;
+  padding: 1% 1%;
+}
+.fa-twitter:hover{
+  color: rgb(97, 97, 190);
+}

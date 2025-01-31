@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing_Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar:::::::::::_______- -->
+    <nav class="navbar navbar-expand-lg bg-body-dark">
+        <div class="container-fluid m-4">
+            <a class="navbar-brand" href="/home.html" id="Logo">Baithak_`</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-4">
+                    <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+                    <a class="nav-link" href="/Contact.html">Contact</a>
+                    <a class="nav-link" href="/menu.html">Menu</a>
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar______::::::::::::: -->
+
+    <!-- Menu_____::: -->
+    <div class="container" id="Contain">
+        <div class="row" id="Menu">
+            <div class="col-md-6">
+                <h1>
+                    <i class="bi bi-person-wheelchair"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" fill="currentColor"
+                        class="bi bi-person-wheelchair" viewBox="0 0 16 16">
+                        <path
+                            d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.732 4.732 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.732 4.732 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79l1.903-2.854ZM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65l1.077 1.078Z" />
+                    </svg>
+                    </i>
+                    Baithak
+                </h1>
+                <p>Testy Food Point..</p>
+                <button data-bs-toggle="modal" data-bs-target="#ContactModal"> Contact</button>
+                <a href="Contact.html"><button id="Cnt">Reserve Table</button></a><hr>
+                <a href="Food.html"><button id="Cnt">Menu</button></a>
+
+            </div>
+            <div class="col-md-6">
+                <img src="Thali.jpg" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+    <!-- Menu_____::: -->
+
+
+
+
+    <!-- Modal -->
+    <!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ContactModal">
+  Launch demo modal
+</button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="ContactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ContactModalLabel">Make Call on +91 98993 31119</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Mail Us : (baithak97@gmail.com)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Menu -->
+    <div class="container" id="Food_Contain">
+        <div class="row" id="row-1 p-5 ">
+            <h1>MENU</h1>
+        </div>
+        <div class="row" id="Food">
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="Burger.jpg1.avif" class="img-thumbnail" alt="...">
+                <h4>Aaloo Burger Burger</h4>
+                <h6>70 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="panerbur.jpjg.avif" class="img-thumbnail" alt="...">
+                <h4>Panner Burger</h4>
+                <h6>80 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="momo.jpg" class="img-thumbnail" alt="...">
+                <h4>Veg Momo</h4>
+                <h6>50 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+             <div class="col-sm-4">
+                <img src="Noodle.jpg" class="img-thumbnail" alt="...">
+                <h4>Veg Noodle</h4>
+                <h6>80 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="pannerNoodle.jpg" class="img-thumbnail" alt="...">
+                <h4>Panner Noodle</h4>
+                <h6>140 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="frymomo.jpg" class="img-thumbnail" alt="...">
+                <h4>Fry Momo</h4>
+                <h6>70 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+             <div class="col-sm-4">
+                <img src="tea.jpg" class="img-thumbnail" alt="...">
+                <h4>Plane Tea</h4>
+                <h6>25 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="coofee,.jpg" class="img-thumbnail" alt="...">
+                <h4>coofee</h4>
+                <h6>40 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="soup.jpg" class="img-thumbnail" alt="...">
+                <h4>Tomato Soup</h4>
+                <h6>80 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="chapmasala.jpjg.webp" class="img-thumbnail" alt="...">
+                <h4> Masala Chap</h4>
+                <h6>150 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="pannertikka.jpg" class="img-thumbnail" alt="...">
+                <h4>Malai Panner Tikka</h4>
+                <h6>200 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+             <div class="col-sm-4">
+                <img src="afganichap.jpg" class="img-thumbnail" alt="...">
+                <h4>Afgani Chaap</h4>
+                <h6>160 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="frenchfries.jpg" class="img-thumbnail" alt="...">
+                <h4>French Fries</h4>
+                <h6>80 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="rajmachawal.jpg" class="img-thumbnail" alt="...">
+                <h4>Rajma Masala</h4>
+                <h6>150 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+             <div class="col-sm-4">
+                <img src="cholechawal.jpg" class="img-thumbnail" alt="...">
+                <h4>Choley Chawal</h4>
+                <h6>80 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="kadichawal.jpg" class="img-thumbnail" alt="...">
+                <h4>Kadhi Chawal</h4>
+                <h6>80 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="dalmakhni.jpg" class="img-thumbnail" alt="...">
+                <h4>Dal Makhni Rice</h4>
+                <h6>180 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="pulao.jpg" class="img-thumbnail" alt="...">
+                <h4>Mutter Pulao</h4>
+                <h6>100 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="sahipaneer.jpjg.jpg" class="img-thumbnail" alt="...">
+                <h4>Sahi Panner</h4>
+                <h6>180 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="dal.jpg" class="img-thumbnail" alt="...">
+                <h4>Dal Fry</h4>
+                <h6>120 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+             <div class="col-sm-4">
+                <img src="tandoriroti.jpg" class="img-thumbnail" alt="...">
+                <h4>Tandoori Roti</h4>
+                <h6>06 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="butternaan.jpg" class="img-thumbnail" alt="...">
+                <h4>Butter Naan</h4>
+                <h6>25 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="missiroti.jpg" class="img-thumbnail" alt="...">
+                <h4>Missi Roti</h4>
+                <h6>20 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+             <div class="col-sm-4">
+                <img src="kasmiridumaalo.jpg" class="img-thumbnail" alt="...">
+                <h4>Kashmiri Dhum Aaloo</h4>
+                <h6>180 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="Alloonanpartha.jpg" class="img-thumbnail" alt="...">
+                <h4>Aaloo Naan Parantha</h4>
+                <h6>35 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="paneerbhurji.jpg" class="img-thumbnail" alt="...">
+                <h4>Panner Bhurji</h4>
+                <h6>240 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="gravychaap.jpg" class="img-thumbnail" alt="...">
+                <h4>Chaap Gravy</h4>
+                <h6>200 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="onionpizza.jpg" class="img-thumbnail" alt="...">
+                <h4>Onion Pizza</h4>
+                <h6>150 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+             <!-- Col-4 -->
+             <div class="col-sm-4">
+                <img src="pannerpizza.jpg" class="img-thumbnail" alt="...">
+                <h4>Panner Pizza</h4>
+                <h6>200 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+            <!-- Col-4 -->
+            <div class="col-sm-4">
+                <img src="indianthali.jpg" class="img-thumbnail" alt="...">
+                <h4>Indian Thali</h4>
+                <h6>170 rupees</h6>
+            </div>
+            <!-- Col-4 -->
+        </div>
+    </div>
+
+    
+   
+
+    <!-- Menu_______________________________ -->
+
+  <!-- Footer -->
+  <div class="container">
+    <div class="row" id="Foot">
+      <div class="col">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.3983849486776!2d77.13648627616851!3d28.797199676582665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0082efbfa711%3A0x44afbac08539d6d7!2sBaithak%20Restaurant!5e0!3m2!1sen!2sin!4v1703758391634!5m2!1sen!2sin"
+          width="400" height="350" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col">
+        <p>10 am to 10 pm</p>
+        <p>Alipur Village, Delhi, Near Shardhand College Alipu Stand 110036.</p>
+        <hr>
+        <p>98993 31119</p>
+        <hr>
+        <p>baithak97@gmail.com</p>
+        <hr>
+        <p><i class="bi bi-instagram">
+            <svg xmlns="https://www.instagram.com/" width="36" height="26" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+            <i class="bi bi-facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+              </svg>
+            </i>
+          </i></p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

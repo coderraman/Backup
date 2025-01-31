@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home {
+  padding: 10px;
+  /* height: 30vh; */
+  background-color: black;
+}
+li img {
+  width: 22px;
+}
+.home ul {
+  background-color: #242424;
+  padding: 8px 10px;
+  margin: 15px;
+  border-radius: 8px;
+}
+.home ul li {
+  list-style: none;
+  width: 30px;
+  display: flex;
+  gap: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1px;
+}
+.bg-black {
+  background-color: black;
+  color: white;
+}
+.invert {
+  filter: invert();
+}
+.liberery{
+    padding: 11px;
+    position: relative;
+}
+
+.liberery ul li {
+  display: flex;
+  gap: 29px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 3px;
+}
+.liberery ul{
+    /* background-color: #242424; */
+    padding: 18px 10px;
+    margin: 12px;
+    border-radius: 8px;
+    width: 23vw;
+}
+.plus{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right: 7px;
+    bottom: 38px;
+
+
+}
+.plus img{
+    width: 20px;
+    cursor: pointer;
+}
+.plus:hover{
+color: white;
+font-size: large;
+ }
+

@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #2d073df3;
+  
+}
+.container{
+/* border: 2px solid black; */
+ height: 50vh; 
+width: 100%; 
+padding: 10%;
+margin: 2%;
+}
+.topHead{
+/* border: 3px solid gold; */
+width: 30%;
+padding: 13px;
+
+}
+.topHead h1{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 8vh;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+.topHead span{
+    color: rgb(223, 221, 217);
+    text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+
+
+}
+.input{
+/* border: 5px solid red; */
+width: 50%;
+background-color: white;
+color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 10px;
+text-align: center;
+border-radius: 8px;
+
+}
+.input input{
+outline: 0;
+border: 0;
+font-size: 1.2rem;
+color: gray;
+
+}
+.input img{
+width: 49px;
+cursor: pointer;
+
+}
+
+.btn button{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 10vh;
+    outline: 0;
+    background: #019f55;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 21px;
+    border-radius: 10px;
+}
+.btn img{
+    width: 29px;
+    margin: 1px;
+    color: white;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_Manuplation</title>
+    <style>
+        .poora {
+            height: 4vh;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+
+<h2>Hello JavaScript</h2>
+<br>
+<p class="poora">
+    Hello World This is the Morning 5 am and I'm Learning to write code!"</p>
+<br>
+
+<div class="box">First</div>
+<div class="box">Second</div>
+<div class="box">Third</div>
+<div class="box">Fourth</div>
+<div class="box">Fifth</div>
+<div class="box">Sixth</div>
+<br>
+<div class="fox">
+    Lorem, ipsum.
+</div>
+
+<body>
+
+    <script>
+        // Practice Question 1
+        // Crate a H2 heading element with text "Hello JavaScript". Append"From Apna College Students"!''
+        let h2 = document.querySelector("h2");
+        console.log(h2.innerText);
+        h2.innerText = h2.innerText + (" From Apna College");
+        console.log(h2.innerText);
+
+        // Practice Question 2
+        // Create 3 divs with common calss name "box". Access them & add some unique text to each them!
+
+        // let divs = document.querySelectorAll(".box");
+        // let inx = 0;
+        // for (div of divs) {
+        //     div.innerText = `New Unique Number ${inx}`;
+        //     inx++;
+        // } console.log(divs);
+
+
+        // Attributes
+        // getAttribute(attr):_____>For Getting Attribute Value!
+        // let para = document.querySelector("p")
+        // console.log(para.getAttribute("class"));
+        // para.getAttribute = "class";
+
+        // //setAttribute value(attr):_____>For Setting Attribute Value!
+        // let setelement = document.querySelector(".fox")
+        // console.log(setelement);
+        // setelement.setAttribute("fox","jox");
+
+        // node.style
+        let para = document.querySelector(".poora");
+        console.log(para);
+        para.style.backgroundColor = "orange";
+
+
+
+
+
+    </script>
+</body>
+
+</html>

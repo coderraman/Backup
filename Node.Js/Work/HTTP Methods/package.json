@@ -1,0 +1,13 @@
+{
+  "name": "http-methods",
+  "version": "1.0.0",
+  "main": "Method.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Method.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

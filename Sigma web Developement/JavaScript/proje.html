@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+    }
+    .box{
+        background-color: white;
+        height: 85vh;
+        width: 95vw;
+        padding: 30px;
+        border-radius: 10px;       
+    }
+    .img img{
+        width: 50vw;
+        height: 70vh;
+        float: right;
+        border-radius: 15px;
+    }
+    .heading
+    {
+        /* background-color: red; */
+        padding: 20px;
+        margin: 0px 10px;
+        font-size: larger;
+        letter-spacing: 0.1rem;
+    }
+    .heading h1:hover{
+        font-size: smaller;
+        transition: ease-in-out 5s;
+        cursor: pointer;
+    }
+    .text{
+        /* border: 2px solid red; */
+        height: 30vh;
+        width: auto;
+        padding: 30px;
+    }
+    .text input{
+        width: 25vw;
+        display: flex;
+        padding: 3px;
+        margin: 15px;
+        border-radius: 3px;
+        text-align: ;
+
+    }
+    .btn{
+        /* background-color: firebrick; */
+    }
+    .btn button{
+        border-radius: 6px;
+        border: none;
+        width: 25vw;
+        font-size: 1.3rem;
+        height: auto;
+        text-align: center;
+        padding: 7px;
+        margin: 0px 15px;
+        cursor: pointer;
+        color: black;
+        font-weight: 700;
+    }
+    .btn button:hover{
+        background-color: rgb(128, 0, 0);
+        transition: ease-in 1s;
+        color: white;
+    }
+ 
+@media (max-width:450px){
+    .heading h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1px 0px 20px 0px ;
+        font-size: 2rem;
+    }
+    .img img{
+        width: 85px;
+        height: 35vh;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+<div class="div">
+    <div class="box">
+<div class="img">
+<img src="img.jpg1111.jpg" alt="">
+</div>
+<div class="heading">
+    <h1>Employee Form</h1>
+</div>
+<div class="text">
+    <form action="php-backend">
+        <input type="text" placeholder="Enter Name">
+        <label for="text" id="text"></label>
+        <input type="text" placeholder="Enter Mobile No,">
+        <label for="text" id="text"></label><input type="text" placeholder="Enter Age">
+        <label for="text" id="text"></label>
+    </form>
+    <div class="btn">
+        <button>Submit</button>
+    </div>
+</div>
+    </div>
+</div>
+
+<script>
+    
+</script>
+</body>
+</html>

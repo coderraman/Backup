@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+
+<body>
+    <!--Print all even Numbers from 0 to 100  -->
+    <script>
+        for (let i = 0; i < 101; i++) {
+            if (i % 2 === 0) {
+                console.log("Even Nuber is =", i)
+            }
+            else {
+
+            }
+        }
+        //   <!--Print all Odd Numbers from 0 to 100//
+        for (let i = 0; i < 101; i++) {
+            if (i % 2 !== 0) {
+                console.log("Odd Nuber is =", i)
+            }
+            else {
+
+            }
+        }
+
+        //  Create a game Where you Start with any random game number. Ask the user to keep gussing the game until the user enters correct value.//
+
+
+        let gamenum = 5;
+        let usernum = prompt("Enter Your Number");
+        while (usernum != gamenum) {
+            console.log("Correct Number");
+            prompt("Wrong Number Enter again")
+        }
+        console.log("Correct Number");
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random_Color Genrator</title>
+  
+    <style>
+      .container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .box {
+        height: 80vh;
+        width: 100%;
+        padding: 23px;
+        margin: 10px;
+        text-align: center;
+        border: 2px solid black;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+             }
+             h1{
+              text-align: center;
+             }
+    </style>
+  </head>
+  <body>
+    <!-- HTML -->
+    <h1>Random Number Genrator
+      <br>
+      <span>Change Color Of Box Just Refresh Page Continously!</span>
+    </h1>
+    <div class="container">
+      <div class="box">Welcome Coders!</div>
+    </div>
+    <!-- HTML -->
+    <script>
+      let randm = Math.random();
+      console.log(randm);
+      let box = document.querySelector(".box")
+      if(randm<=0.33){
+        box.style.backgroundColor ="red"  ;
+        box.style.color = "white" ;
+      }
+      else if(randm<=0.66){
+        box.style.backgroundColor ="green"  ;
+        box.style.color = "white" ;
+
+      }
+      else{
+        box.style.backgroundColor ="black"  ;
+        box.style.color = "white" ;
+
+      }
+    
+    </script>
+  </body>
+</html>

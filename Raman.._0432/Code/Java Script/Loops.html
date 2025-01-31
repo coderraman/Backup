@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, fuga.
+
+    <style>
+        body {
+            padding: 18% 2%;
+            color: white;
+            background-color: black;
+            /* text-decoration: overline; */
+            font-size: 2rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script>
+        // for//
+
+        let age = 10;
+        for (age = 10; age < 14; age++) {
+            console.log(age);
+        }
+
+        let dost = ["Rahul", "Raman", "Girish"];
+        for (let index = 0; index < dost.length; index++) {
+            console.log(dost[index]);
+
+        }
+
+        //for each//
+
+        let dosti = ["Rahul", "Sartaj", "Girish"];
+        dosti.forEach(function (ele) {
+            console.log("Or bhadwe, dost " + ele)
+        });
+
+
+        let keyboard = ["Dell leptop.....", "hp leptop....", "zebronics leptop..."];
+        keyboard.forEach(function (element) {
+            console.log("This is, " + element)
+        });
+
+        let mouse = ["Dell,", "Hp", "zebro"];
+        mouse.forEach(function (element) {
+            console.log('This mouse is, ' + element)
+        });
+
+        let occupation = ["Developer", "Engeenier", "Designer"];
+        occupation.forEach(function (ty) {
+            console.log("I want to be a " + ty)
+        });
+
+        let Mobile = ["Nokia", "Panasonic", "Samsung"];
+        Mobile.forEach (function (element){
+            console.log("I have " + element + " Phone")
+        });
+
+        // for in //
+
+        let data = {
+            name: "Raman",
+            salary: 15,
+            company: "pvt.ltd...."
+        }
+        for (key in data) {
+            console.log(`${key} of emoplyee is ${data[key]}`);
+        }
+
+        //practice of for//
+        let Info = {
+            Student: "Raman",
+            city: "Delhi",
+            Course: 'Web Designing....'
+        }
+        for (key in Info){
+            console.log(`${key} is ${Info[key]}`);
+        }
+
+        let Brand =  {
+       Tea: 'Masala',
+       Time: "4pm",
+       Place: "office"
+        } 
+        for (key in Brand){
+            console.log(`${key} will be ${Brand[key]}`);
+        }
+
+        // while loop//
+
+        // let r = 10;
+        // while (r < 15) {
+        //     console.log(`${r} is less than 15`);
+        //     r++;
+        // }
+
+
+        //Do while loop//
+        
+        // let j = 5;
+        // do {
+        //     console.log(`${j} is less than 10`);
+        //     j++;
+        // } while (j < 10);
+
+
+
+
+        // let umar = 20;
+        // do {
+        //     console.log(`${umar}) is less than 15`);
+        //     umar++;
+
+        // } while (umar > 15);
+
+    </script>
+</body>
+
+</html>

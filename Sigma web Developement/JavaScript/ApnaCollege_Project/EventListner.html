@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventListners in JavScript</title>
+  </head>
+  <body>
+    <button id="coder">Click by Coder!</button>
+    <script>
+      // Event Listners
+      // node.addEventListner(event,callback)
+      // NOTE: The callback reference should be same to remove
+
+      //   let btnn = document.querySelector("#coder");
+      //   btnn.addEventListener("click", (evt) => {
+      //     console.log("Hello Coders!");
+      //     console.log(evt.type);
+      //     console.log(evt.target);
+      //     console.log(evt.clientX, evt.clientY);
+      //   });
+
+      // node.removeEventListner(event,callback)
+      let btnn = document.querySelector("#coder");
+
+      btnn.addEventListener("click", (evt) => {
+        console.log("Hello Coders - Line Zero");
+      });
+
+      btnn.addEventListener("click", (evt) => {
+        console.log("Hello Coders one - First Line");
+      });
+
+      btnn.addEventListener("click", (evt) => {
+        console.log("Hello Coders Two - Second Line");
+      });
+
+      //   Remove______********
+      const thirdLine = () => {
+        console.log("Hello Coders Three - Third Line ");
+      };
+      btnn.addEventListener("click", thirdLine);
+
+      //   Remove______********
+      btnn.removeEventListener("click", thirdLine);
+
+
+      // Practice Question
+      // Create a Toogle button that changesthe screen to dark-mode whwn clicked & Light-mode When clicked again!
+      
+    </script>
+  </body>
+</html>

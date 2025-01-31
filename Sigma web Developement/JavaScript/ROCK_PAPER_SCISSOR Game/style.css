@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* heading */
+.heading {
+  margin-top: 1%;
+  background-color: black;
+  color: white;
+  font-size: 2.4rem;
+  height: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* heading */
+
+/* Pictures */
+.pictures {
+  /* background-color: red; */
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6%;
+  height: 30vh;
+  /* border: 2px solid black; */
+  padding-top: 40px;
+  margin: 20px;
+}
+.pictures img {
+  width: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Pictures */
+
+/* ScoreBoard */
+.score {
+  /* background-color: forestgreen; */
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5%;
+  /* border: 2px solid green; */
+  padding-top: 10px;
+  margin: 20px;
+  font-weight: bolder;
+  font-family: cursive;
+}
+.score p {
+  font-size: 2rem;
+}
+#user-Score #Computer-Score {
+  font-size: 5rem;
+}
+
+.play {
+  height: 6vh;
+  line-height: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+}
+#Move {
+  color: white;
+  padding: 15px;
+  background-color: black;
+  border: none;
+  box-sizing: content-box;
+  height: 5vh;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}

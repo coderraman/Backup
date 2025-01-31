@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects & Classes</title>
+  </head>
+  <body>
+    <script>
+      // Classes objecs and Prototype in JavaSCript!
+      const Student = {
+        Name: "Raman",
+        Marks: 98.5,
+        PrntMarks: function () {
+          console.log(this.Marks);
+        },
+      };
+      console.log(Student);
+      // So Here we are using Objects and Methods
+
+      // Prototype : Means Object under Object [iN every objet and Array we get a Prtotype in Console and that define more and more info, we can add our prototype also in that!]
+      //   Lets make own Prtotype
+      // This:- Basically We use "This" in javaScript for Selecting ecject value or object!
+
+      const employee = {
+        calcTax() {
+          console.log("The tax is 10%");
+        },
+      };
+
+   const Ramshyam = {
+    salary: 100000,
+   } 
+   const RamLakhan = {
+    salary: 100000,
+   } 
+   const RamSitaji = {
+    salary: 100000,
+   } 
+
+
+
+   Ramshyam.__proto__ = employee;
+   RamLakhan.__proto__ = employee;
+   RamSitaji.__proto__ = employee;
+
+
+    </script>
+  </body>
+</html>

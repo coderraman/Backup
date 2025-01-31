@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .navbar-brand h2 {
+        font-size: 2rem;
+        padding: 0px 12px;
+        font-family: 'Merriweather', serif;
+    }
+
+    .carousel-inner img {
+        width: 100vw;
+        height: 80vh;
+        opacity: 0.8.1;
+    }
+
+    h3 {
+        /* color: white; */
+    }
+
+    .S {
+        /* border: 2px solid red; */
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .S h1 {
+        margin-top: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 550;
+    }
+
+    .product-device img {
+        margin-top: -4%;
+        height: 40vh;
+        width: 40vw;
+        border-radius: 5px;
+
+
+    }
+
+    .contact {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 25vh;
+        width: auto;
+        margin-top: 4%;
+    }
+
+    .about {
+        /* border: 2px solid red; */
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 25vh;
+        width: auto;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fixed">
+            <a class="navbar-brand" href="/tds.html ">
+                <h2> All Tax Buddy</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Tds.html">TDS</a></li>
+                            <li><a class="dropdown-item" href="/GSTR Return.html">GSTR Return</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/ITR.html">ITR</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="tax2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Accounting</h3>
+                    <p>Accounting, which is often just called "accounting," is the process of measuring, processing, and
+                        sharing financial and other information about businesses and corporations.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="tax4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>TDS</h3>
+                    <p>The concept of TDS was introduced with an aim to collect tax from the very source of income. As
+                        per this concept, a person (deductor) who is liable to make payment of specified nature to any
+                        other person (deductee) shall deduct tax at source and remit the same into the account of the
+                        Central Government.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="income-tax.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>ITR</h3>
+                    <p>Income Tax Returns or ITR is a form used to declare the net tax liability, claiming of tax
+                        deductions, and to report the gross taxable income. It is mandatory for individuals who earn a
+                        certain amount of money have to File IT Returns.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <div class="S">
+        <h1>OUR SERVICES</h1>
+    </div>
+    <div class="Service">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">TDS</h1>
+                <p class="lead fw-normal">The concept of TDS was introduced with an aim to collect tax from the very
+                    source of income. As per this concept, a person (deductor) who is liable to make payment of
+                    specified nature to any other person (deductee) shall deduct tax at source and remit the same into
+                    the account of the Central Government.</p>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block">
+                <img src="tax3.jpg" alt="">
+            </div>
+        </div>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">ITR</h1>
+                <p class="lead fw-normal">Income Tax Returns or ITR is a form used to declare the net tax liability,
+                    claiming of tax deductions, and to report the gross taxable income. It is mandatory for individuals
+                    who earn a certain amount of money have to File IT Returns.
+                    Firms or companies, Hindu Undivided Families (HUFs), and self-employed or salaried individuals must
+                    file ITR to the Income Tax Department of India.</p>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block">
+                <img src="ITR.JPG" alt="">
+            </div>
+        </div>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">GSTR RETURN</h1>
+                <p class="lead fw-normal">A GST return is a document containing details of all income/sales and/or
+                    expenses/purchases that a GST-registered taxpayer (every GSTIN) is required to file with the tax
+                    administrative authorities. This is used by tax authorities to calculate net tax liability.
+
+                    Under GST, a registered dealer has to file GST returns that broadly include:.</p>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block">
+                <img src="gst-retrun-filing.JPG" alt="">
+            </div>
+            <br>
+            <div class="contact">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Mobile NO.</label>
+                        <input type="mobile" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="about">
+                <span>
+                    <h2> All Tax Buddy</h2>
+                    <h3>Shiva Complex, H. No. 5, 2nd Floor, Nai Basti, Ghaziabad, Uttar Pradesh 201001</h3>
+                    <h3>Phone: 099716 12665</h3>
+                </span>
+                <br>
+            </div>
+            <div class="footer">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">All content are reserved</h5>
+                        <p class="card-text">@copyright &copy;</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

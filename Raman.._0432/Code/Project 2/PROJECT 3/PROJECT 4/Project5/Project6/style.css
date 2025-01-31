@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("cab.jpg" ) no-repeat no-repeat ;
+    background-size: cover;
+    opacity: 20;
+    text-shadow: 2px 2px black;
+    transition: ease-in;
+}
+
+.header p {
+    font-size: 4rem;
+    display: flex;
+    justify-content: left;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.header1 p {
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: left;
+    margin-top: -3%;
+    margin-left: 13%;
+    font-weight: 400;
+}
+
+body {
+    color: white;
+}
+#Middle p{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.Footer p{
+    font-size: 6rem;
+    font-weight: 400;
+    display: flex;
+    margin-top: 8%;
+    margin-right: 1%;
+    justify-content: right;
+    color: hsl(0, 0%, 100%);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --color: rgb(241, 238, 240);
+            --secolor:rgb(34, 160, 65);
+            --mainpadding:6px;
+        }
+        
+        .nav{
+            
+             background-color: #d13f3f;
+             color: var(--color);
+        }
+        .nav nav{
+            display: flex;
+
+        }
+        .nav li{
+            padding: var(--mainpadding);
+            list-style: none;
+            font-size: small;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <nav>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </nav>
+</div>
+    <h1>Variables </h1>
+</body>
+</html>

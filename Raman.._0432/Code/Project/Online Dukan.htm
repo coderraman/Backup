@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Online%20Dukan_files/style.css">
+    <title>Online Dukan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* overflow: hidden; */
+            /* border: 2px solid green; */
+            background-image: url("sch.jpg");
+            font-family: 'Patrick Hand', cursive;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body::before {
+            content: "";
+            background-image: url("sch.jpg.jpg");
+            width: 100%;
+            height: 140%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            opacity: 0.9;
+            z-index: -4;
+
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(30, 28, 28);
+            height: 8vh;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            font-weight: 400;
+        }
+
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 1.3rem;
+            padding: 20px 45px;
+
+        }
+
+        nav ul li :hover {
+            text-decoration: underline;
+            transition: 0.1s;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        .Searchbar input {
+            border: 1px solid white;
+            overflow: hidden;
+            color: black;
+            font-weight: 300;
+            width: 20vw;
+            height: 3vh;
+            float: right;
+            position: absolute;
+            top: 3%;
+            right: 25%;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .btn1 button {
+            float: right;
+            width: 4vw;
+            background-color: black;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 300;
+            border-radius: 2px;
+            position: relative;
+            top: 25px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .btn1 :hover {
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .btn2 button {
+            float: right;
+            width: 4vw;
+            background-color: black;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 300;
+            border-radius: 2px;
+            position: relative;
+            top: 25px;
+            right: 50px;
+            cursor: pointer;
+        }
+
+        .btn2 :hover {
+            font-size: 1rem;
+            transition: 0.4s;
+        }
+
+        .contant {
+            /* border: 2px solid hotpink; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 10px;
+            padding: 0 23px;
+        }
+
+        #in-1 {
+            padding: 100px 50px;
+            margin: 5px auto;
+            height: 2.8vh;
+            width: 18vw;
+            text-align: center;
+            /* border: 2px solid white; */
+            border-radius: 4px;
+            font-size: 1.3rem;
+            font-weight: 200;
+            font-family: 'Baloo 2', cursive;
+
+        }
+
+        #in-2 {
+            padding: 100px 50px;
+            margin: 5px auto;
+            height: 2.8vh;
+            width: 18vw;
+            text-align: center;
+            /* border: 2px solid white; */
+            border-radius: 4px;
+            font-size: 1.3rem;
+            font-weight: 200;
+            font-family: 'Baloo 2', cursive;
+
+        }
+
+        #in-3 {
+            padding: 100px 50px;
+            margin: 5px auto;
+            height: 2.8vh;
+            width: 18vw;
+            text-align: center;
+            /* border: 2px solid white; */
+            border-radius: 4px;
+            font-size: 1.3rem;
+            font-weight: 200;
+            font-family: 'Baloo 2', cursive;
+
+        }
+
+        .gg img {
+            /* display: block; */
+            border-radius: 8px;
+            position: relative;
+            top: 0px;
+            left: 30%;
+
+        }
+
+        .gg p {
+            margin: 45px;
+            padding: 0px 95px;
+            color: white;
+            letter-spacing: 0.3rem;
+            font-size: 2.5rem;
+            font-weight: 900;
+            /* font-family: 'Times New Roman', Times, serif; */
+            position: relative;
+            top: 10%;
+            left: 10px;
+        }
+
+        .ty {
+            /* border: 2px solid gold; */
+
+        }
+
+        .ty h3 {
+            display: flex;
+            flex-direction: column-reverse;
+            position: absolute;
+            right: 20%;
+            letter-spacing: 00.5rem;
+            font-size: 2.5rem;
+        }
+
+        .frm {
+            font-size: 1rem;
+            padding: 2px 8px;
+            margin: 2px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="Searchbar">
+                    <input type="Search Here" placeholder="Search Here">
+                </div>
+                <div class="btn1">
+                    <button>Login</button>
+                </div>
+                <div class="btn2">
+                    <button>Email</button>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contant">
+            <div class="in" id="in-1">
+                <h1>ainstruction</h1>
+            </div>
+            <div class="in" id="in-2">
+                <h1>schooling</h1>
+            </div>
+            <div class="in" id="in-3">
+                <h1>learning</h1>
+            </div>
+        </div>
+        <br>
+        <div class="gg">
+            <div class="tt">
+                <p> Education is a purposeful <br> activity directed at achieving certain aims, <br> such as
+                    transmitting knowledge or fostering skills and character traits.</p>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <div class="ty">
+        <h3>
+            <li>discipline</li>
+            <li> improvement</li>
+            <li>information</li>
+            <li>learning</li>
+            <li>literacy</li>
+            <li>scholarship</li>
+            <li>schooling</li>
+        </h3>
+    </div>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
+    <br>
+    <div class="frm">
+        <form action="php.html">
+            <label for="name">Name</label>
+            <input type="Type Your Name" id="name">
+            <br>
+            <label for="Father Name">Father Name</label>
+            <input type="Father Name" id="Father Name">
+            <br>
+            <label for="Phone No.">Phone No.</label>
+            <input type="text" name="Phone No." id="Phone No.">
+            <br>
+            <label for="Gender">Name</label>
+            Gender: Male<input type="radio" name="Gender" id="Gender"> FeMale<input type="radio" name="Gender" id="">
+            <br>
+            <label for="email">Name</label>
+
+            Email: <input type="email" name="Email" id="email">
+            <br>
+            <label for="date">Name</label>
+
+            Date: <input type="date" name="Date" id="date">
+            <br>
+            <label for="Old Customer">Name</label>
+            Old Customer: <input type="checkbox" name="Old Customer" id="Old Customer">
+            <br>
+            <label for="Feedback">Name</label>
+
+            Feedback: <textarea name="Feedback" id="Feedback" cols="30" rows="10">Feedback</textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+            <input type="reset" value="Reset Form">
+        </form>
+    </div>
+    <br>
+    <div class="image">
+        <img src="" alt="">
+
+    </div>
+    <br>
+
+    <!-- Java Script -->
+
+    <script>
+        var a = 20;
+        console.log = "a+5"; 
+    </script>
+</body>
+
+</html>

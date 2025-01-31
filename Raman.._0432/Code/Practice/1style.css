@@ -1,0 +1,33 @@
+.carousel-item img {
+    height: 90vh;
+}
+
+.div h1 {
+    font-size: 2.9rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    text-shadow: 2px 1px 1px rgb(217, 145, 136);
+
+}
+
+#Project {
+    height: 35vh;
+    margin: auto;
+    /* background-color: rgb(255, 248, 247); */
+    box-sizing: border-box;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    border: 5px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 20vw;
+}

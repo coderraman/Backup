@@ -1,0 +1,88 @@
+#div {
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+    border-radius: 15px;
+    
+
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.img img {
+    width: 18vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn button {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 5vw;
+    padding: 6px 5px 4px 2px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn button:hover {
+    background-color: rgb(204, 204, 233);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 2.1rem;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.para {
+    /* background-color: darkcyan; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    margin: auto;
+}
+
+.para p {
+    font-size: 1.4rem;
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+  
+}
+.btn2 button{
+    color: darkblue;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10vw;
+    padding: 6px 5px 4px 2px;
+    margin: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(198, 204, 243);
+
+}
+.btn2 button:hover{
+    background-color: white;
+}

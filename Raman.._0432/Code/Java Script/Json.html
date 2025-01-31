@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+
+<body>
+    <div class="container">
+        Coding Duniya...
+    </div>
+    <script>
+        let jsonobj = {
+            name: "Raman",
+            Channel: "CWR",
+            friend: "Lalla"
+        }
+        //Stringify in json//
+        let myjsonobj = JSON.stringify(jsonobj);
+        console.log(myjsonobj);
+
+        //replace in json//
+        myjsonobj = myjsonobj.replace('Raman', 'Aman');
+        myjsonobj = myjsonobj.replace('CWR', 'CWA');
+        console.log(myjsonobj);
+
+        //parse in json//
+        newjsonobj = JSON.parse(myjsonobj);
+        console.log(newjsonobj);
+
+        //practice//
+        let h = {
+            Age: 45,
+            Address: "Delhi",
+            Office: "gurgaon"
+        }
+        let hjsonobj = JSON.stringify(h);
+        console.log(hjsonobj);
+
+        //replace in JSON//
+        hjsonobj = hjsonobj.replace('Delhi', 'Mumbai');
+        hjsonobj = hjsonobj.replace(45, 60);
+        console.log(hjsonobj);
+
+        //parse in json//
+        googleobj = JSON.parse(hjsonobj);
+        console.log(googleobj);
+  
+
+    </script>
+</body>
+
+</html>

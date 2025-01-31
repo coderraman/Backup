@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes in javaScript!</title>
+  </head>
+  <body>
+    <script>
+      // Here we get a latest word "new" basically we use this for Creating new object throgh classes in JavaScript!
+      // calss Myclass {
+      //     constructor(){
+
+      //     }
+      //     myMethod(){
+
+      //     }
+
+      class Swift {
+        constructor(Brand, Milege) {
+          console.log("Begniner!");
+          this.Brand = Brand;
+          this.Milege = Milege;
+          //   Like This We Use Constructor and add value and variables!
+        }
+        start() {
+          console.log("You car is Started!");
+        }
+        stop() {
+          console.log("Car has Stoped!");
+        }
+
+        Brand(Brand) {
+          this.Brand = Brand;
+        }
+      }
+
+      //   let Audi = new Swift();
+      //   Audi.Brand = "Brand Call [Audo]";
+      let Fortruner = new Swift("Fortuner", 40);
+      // Now the main Topic "Constructor" in JavaScript!
+
+      //   Inheritance in JavaScript!
+      // inheritance is passing down properties & methods from parent Class to child class.
+      // class parent{
+      //     class child extends parent{
+
+      //     }
+      // }
+
+    //   Note-- if a child & Perent have same methods, Chid's method will be used.[Method Overriding]
+    </script>
+  </body>
+</html>

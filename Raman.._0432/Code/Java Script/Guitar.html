@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guitar Classes Landing Page</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Guitar Classes</h1>
+  </header>
+  <section class="container">
+    <form id="paymentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      
+      <label for="classType">Select Class Type:</label>
+      <select id="classType" name="classType">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select><br><br>
+      
+      <label for="paymentAmount">Payment Amount:</label>
+      <input type="number" id="paymentAmount" name="paymentAmount" required><br><br>
+      
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod" name="paymentMethod">
+        <option value="creditCard">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bankTransfer">Bank Transfer</option>
+      </select><br><br>
+      
+      <button type="submit">Pay Now</button>
+    </form>
+  </section>
+
+  <script src="script.js">
+    document.getElementById("paymentForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const paymentDetails = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    classType: formData.get("classType"),
+    paymentAmount: formData.get("paymentAmount"),
+    paymentMethod: formData.get("paymentMethod")
+  };
+  // Here you can perform further actions such as sending data to a server for payment processing
+  console.log(paymentDetails);
+  alert("Payment successful!");
+});
+
+  </script>
+</body>
+</html>

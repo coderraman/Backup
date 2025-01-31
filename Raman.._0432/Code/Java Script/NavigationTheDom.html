@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dom</title>
+    <style>
+        body {
+            background-color: rgb(33, 34, 34);
+            color: white;
+            font-size: 1.1rem;
+
+        }
+
+        header nav ul {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        ul :hover{
+            text-decoration: underline;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            padding: 6px 14px;
+            font-family: fantasy;
+            cursor: pointer;
+        }
+
+        a :hover {
+            font-size: large;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 1500;
+            letter-spacing: 0.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Home">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="Services">Services</a></li>
+                    <li><a href="About">About</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div id="Section">
+                <p>
+                <h2>The Coding World</h2>
+                </p>
+            </div>
+        </section>
+    </div>
+    <script>
+        let Home = document.getElementById('Home');
+        console.log('Home');
+
+        let Section = document.getElementById('Section');
+        console.log('section');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Wesite</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+Mono&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 110px;
+            float: right;
+
+        }
+
+        header {
+            background-color: rgb(52, 119, 244);
+            color: white;
+            height: 8vh;
+            position: static;
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style: none;
+            margin: 5px;
+
+        }
+
+        nav ul li a {
+            position: relative;
+            bottom: 40px;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        ul li :hover {
+            text-decoration: underline;
+
+        }
+
+        .search input {
+            width: 30vw;
+            position: relative;
+            left: 200px;
+            top: 30px;
+            border: 2px solid black;
+            border-radius: 2px;
+            text-align: center;
+        }
+
+        .btn {
+            position: relative;
+            left: 790px;
+            top: 10px;
+            cursor: grab;
+        }
+
+        main {
+            min-height: calc(100vh - 8vh - 12vh);
+        }
+
+        footer {
+            background-color: rgb(52, 119, 244);
+            height: 12vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            position: relative;
+            top: 4px;
+            left: 500px;
+        }
+
+        .container img {
+            width: 800px;
+        }
+
+        .box {
+            font-size: large;
+        }
+
+        .box h3 {
+            font-size: medium;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .box img {
+            margin: 0 20px;
+            position: relative;
+            top: 5px;
+            left: 200px;
+            width: 300px;
+            height: 250px;
+        }
+
+        .t {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99vw;
+            height: 30vh;
+            color: black;
+        }
+
+        .t h5 {
+            font-size: larger;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        .t p {
+            font-size: larger;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        .j img {
+            background-position: center;
+            width: 70vw;
+            height: 90vh;
+        }
+
+        #h {
+            font-size: x-large;
+            font-family: 'Noto Sans Mono', monospace;
+            position: relative;
+            left: 150px;
+            top: 20px;
+        }
+
+        .b h2 {
+            position: relative;
+            left: 5px;
+            font-size: xx-large;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        .b p {
+            font-size: x-large;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        #m img {
+            width: 55vw;
+            height: 70vh;
+            position: relative;
+            left: 420px;
+        }
+
+        #n img {
+            position: relative;
+            left: 420px;
+            width: 55vw;
+            height: 70vh;
+        }
+
+        .bo p {
+            position: relative;
+            top: 2px;
+            left: 150px;
+            width: 80vw;
+            height: 30vh;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        .bo h1 {
+            position: relative;
+            left: 150px;
+
+            font-size: xx-large;
+            font-weight: 900;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        .g img {
+            width: 80vw;
+            height: 120vh;
+            position: relative;
+            top: 250px;
+            overflow: hidden;
+        }
+
+        .r h4 {
+            background-color: rgb(228, 188, 57);
+            width: 60vw;
+            font-size: xx-large;
+            font-family: 'Noto Sans Mono', monospace;
+            position: relative;
+            left: 20%;
+            list-style: none;
+        }
+
+        #IA {
+            width: 40vw;
+            height: 45vh;
+            text-align: center;
+            float: right;
+            position: relative;
+            right: 8%;
+            font-size: x-large;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        #IB {
+            width: 40vw;
+            height: 45vh;
+            text-align: center;
+            position: relative;
+            left: 10%;
+            font-size: x-large;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        .last {
+            text-align: center;
+            width: 35vw;
+            height: 40vh;
+            background-color: rgb(228, 188, 57);
+            font-size: xx-large;
+            font-family: 'Noto Sans Mono', monospace;
+            position: relative;
+            left: 30%;
+            bottom: 5px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXIc1nMopWEQuNeV7AL6oqUyJM4vsCezdJGWx93NjfL0__aijb8CHKaJM-m1v_ALK-cqE&usqp=CAU"
+                    alt="logo">
+            </div>
+            <div class="search">
+                <input type="Search Here" placeholder="Search Here">
+                <div class="btn">
+                    <button>Search</button>
+                </div>
+            </div>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/74def7104725053.5f6991df0b93d.jpg" alt="">
+        </div>
+        <br>
+        <div class="box">
+            <h3> Mobile Assessories</h3>
+            <img src="https://rukminim1.flixcart.com/image/612/612/kgwld3k0/mobile-holder/b/m/w/por-122-modesk-universal-mobile-holder-black-portronics-original-imafxfb2ztabrxqp.jpeg?q=70"
+                alt="Phone">
+            <img src="https://m.media-amazon.com/images/I/51gVvVUrI7L._SL1000_.jpg" alt="Phone">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/242709/1549298869780.jpg?imwidth=200&impolicy=hq"
+                alt="Phone">
+            <img src="https://rukminim1.flixcart.com/image/612/612/kgwld3k0/mobile-holder/b/m/w/por-122-modesk-universal-mobile-holder-black-portronics-original-imafxfb2ztabrxqp.jpeg?q=70"
+                alt="Phone">
+            <img src="https://media.istockphoto.com/photos/mobile-kit-with-smartphone-headphones-and-chargers-picture-id1156397327?k=20&m=1156397327&s=612x612&w=0&h=XCCulm0DIUe_seyRf5bqnoHyqIfrDNnYdxmzJ0zMhIM="
+                alt="Phone">
+            <br>
+            <h3>Furniture Assessories</h3>
+            <img src="https://connect.buildnext.in/wp-content/uploads/2020/05/furniture-internal-interenal-final-1024x560.jpg"
+                alt="Furniture">
+            <img src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2014/10/2/0/Kelly-Sutton_Greystone-Master-Bedroom-Suite-bed.jpg.rend.hgtvcom.616.462.suffix/1412263804961.jpeg"
+                alt="Furniture">
+
+            <img src="https://ebco.in/image/cache/catalog/home-slider/h2_banner1-390x270.jpg" alt="Furniture">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR97XDy8_1dZjfQrAst3CIrTxUnU4X8x0i0ag&usqp=CAU"
+                alt="Furniture">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvBs42qDgp8NDcx6FxUl3UpKhdNyML9kVGw&usqp=CAU"
+                alt="Furniture">
+            <h3>Computer Assessories</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_Tsr7khlqKyHPt4xDTFGlCYqEtRt7VVDsQ&usqp=CAU"
+                alt="Computer">
+            <img src="https://image.shutterstock.com/shutterstock/photos/711208117/display_1500/stock-vector-computer-accessories-headphones-parts-accessories-personal-computer-icon-in-set-collection-on-711208117.jpg"
+                alt="Computer">
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/61QeMC9P8rL._SL1000__1200x768.jpeg?CChljbAoNX4532CoGJZhs_qiI9vNNEKL&size=770:433"
+                alt="Computer">
+            <img src="https://twoaveragegamers.com/wp-content/uploads/2020/02/Gaming-Computer-scaled.jpg"
+                alt="Computer">
+            <img src="https://www.tech21century.com/wp-content/uploads/2021/04/main-computer-parts.jpg" alt="Computer">
+            <h3>Game Assessories</h3>
+            <img src="https://www.xda-developers.com/files/2021/07/Best-accessories-for-gaming-laptops.jpg" alt="Game">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTguf8yw8SVnsnvG98FAERRFNjZzMZxuuAigQ&usqp=CAU"
+                alt="Game">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxDOlBR6u_2LvxhD0RL_NReMnno55ThyWhA&usqp=CAU"
+                alt="Game">
+            <img src="https://www.mantelligence.com/wp-content/uploads/2019/07/gaming-accessories-how-to-pick.jpg"
+                alt="Game">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQymdcKHOn-2Q4-cXDmZHsuBUm1Xg3URmEZYxHmwnZoqnB8wkAtRFT0U_RQHCdzgiP8R4&usqp=CAU"
+                alt="Game">
+            <h3>Cloths</h3>
+            <img src="https://media.gq.com/photos/5ab151dcd668df704470b18f/master/w_1600%2Cc_limit/Not-Normal-High-Fashion-Gets-Serious-About-Regular-Clothes-20-Edit.jpg"
+                alt="Cloth">
+            <img src="https://i.pinimg.com/474x/0a/00/b8/0a00b8aa14080e64c2f493d44bc0c1ae--mens-style-fashion-styles.jpg"
+                alt="">
+            <img src="https://media.gettyimages.com/photos/this-one-match-perfect-with-me-picture-id1293366109?s=612x612"
+                alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwQyxxKeKv3mhyAfgjtuXJ_DfqRLDcSzemA&usqp=CAU"
+                alt="">
+            <img src="https://ik.imagekit.io/muftijeans/aw22/aw22-shirts-mbl_o2mkiPm3dy.jpg" alt="">
+            <br>
+            <div id="h">
+                <br>
+                <h2>ONLINE SHOPPING</h2>
+            </div>
+            <div class="t">
+                <p>
+                    Be the part of online shopping
+                    Online shopping is a form of electronic commerce which allows consumers to directly buy goods or
+                    services from a seller over the Internet using a web browser or a mobile app. Consumers find a
+                    product of interest by visiting the website of the retailer directly or by searching among
+                    alternative vendors using a shopping search engine,
+                    <br> which displays the same product's availability
+                    and pricing at different e-retailers.
+                    <br> As of 2020, customers can shop online using a range of
+                    different computers and devices, including desktop computers, laptops, tablet computers and
+                    smartphones.
+                    <br>
+
+                    An online shop evokes the physical analogy of buying products or services at a regular
+                    "bricks-and-mortar" retailer or shopping center; the process is called business-to-consumer (B2C)
+                    online shopping.
+                    <br> When an online store is set up to enable businesses to buy from another......
+                    Website Creating..
+                    Devlopment is a very brilliant work...
+
+                </p>
+            </div>
+            <div class="j">
+                <img src="https://www.addictioncenter.com/app/uploads/2020/01/online_shopping_addiction-scaled.jpeg"
+                    alt="Online shopping">
+            </div>
+            <div class="b">
+                <h2>
+                    Web Designing
+                </h2>
+                <br>
+                <p>
+                    Web design encompasses many different skills and disciplines in the production and maintenance of
+                    websites.
+                    <br>
+
+                    The different areas of web design include web graphic design; user interface design (UI
+                    design); authoring, including standardised code and proprietary software; user experience design (UX
+                    <br>
+                    design); and search engine optimization. Often many individuals will work in teams covering
+                    different aspects of the design process, although some designers will cover them all.[1] The term
+                    "web design" is normally used to describe the design process relating to the front-end (client side)
+                    design of a website including writing markup.
+                    <br> Web design partially overlaps web engineering in the
+                    broader scope of web development. Web designers are expected to have an awareness of usability and
+                    be up to date with web accessibility guidelines.
+                </p>
+                <div id="m">
+                    <img src="
+                https://miro.medium.com/max/915/0*4DpFVUP_VfkhzSIL" alt="">
+                </div>
+                <br>
+                <h2>Web Devlopment</h2>
+                <br>
+                <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an
+                    intranet (a private network).[1] Web development can range from developing a simple single static
+                    page of plain text to complex web applications, electronic businesses, and social network services.
+                    <br> A more comprehensive list of tasks to which Web development commonly refers, may include Web
+                    engineering, Web design, Web content development, client liaison, client-side/server-side scripting,
+                    Web server and network security configuration, and e-commerce development.
+                    <br>
+
+                    Among Web professionals, "Web development" usually refers to the main non-design aspects of building
+                    Web sites: writing markup and coding.[2] Web development may use content management systems (CMS) to
+                    make content changes easier and available with basic technical skills. <br>
+
+                    For larger organizations and businesses, Web development teams can consist of hundreds of people
+                    (Web developers) and follow standard methods like Agile methodologies while developing Web sites.
+                    Smaller organizations may only require a single permanent or contracting developer, or secondary
+                    assignment to related job positions such as a graphic designer or information systems technician.
+                    <br> Web development may be a collaborative effort between departments rather than the domain of a
+                    designated department. There are three kinds of Web developer specialization: front-end developer,
+                    back-end developer, and full-stack developer.
+                    <br>[3] Front-end developers are responsible for behavior and visuals that run in the user browser,
+                    while back-end developers deal with the servers. Since the commercialization of the Web with Tim
+                    Berners-Lee[4] developing the World Wide Web at CERN, the industry has boomed and has become one of
+                    the most used technologies ever.
+                    Webdevelopmenttimeline.
+                </p>
+                <div id="n">
+                    <img src="https://ares.decipherzone.com/blog-manager/uploads/banner_webp_bea99db8-7dba-41e7-941c-de4b61cc1650.webp"
+                        alt="web development">
+                </div>
+                <br>
+            </div>
+            <div class="bo">
+
+                <h1>
+                    <li>Features that help businesses bring ideas to life</li>
+                </h1>
+                <br>
+                <p> Google Web Designer gives you the power to create beautiful and compelling videos, images, and HTML5
+                    ads. Use animation and interactive elements to build out your creative vision, then scale your
+                    content for different sizes or audiences with responsive and dynamic workflows.
+                    <br>
+
+                <h1>
+                    <li>GET A MODERN WEBSITE DESIGNED FOR YOUR BUSINESS</li>
+                </h1>
+                <br>
+                <p> In the digital realm, a website is an essential element for businesses, irrespective of their size
+                    and type. It helps them increase their brand presence via the Internet breaking the geographical
+                    boundaries. A professional website design itself can be used to attain various marketing strategies
+                    in order to help your business surge. Thoughtfully created website designs have a far outspread
+                    reach than any other form of marketing tools.
+                <div class="g">
+                    <img src="https://img.freepik.com/premium-photo/word-design-written-top-colorful-geometric-3d-shapes_2227-1663.jpg?w=2000"
+                        alt="">
+                </div>
+                </p>
+                </p>
+                <h1>
+                    <li>
+                        FUNDAMENTALS OF WEB DESIGN
+                    </li>
+                </h1>
+                <br>
+                <p>
+                    At first sight, website design to a viewer appears to be the visuals seen on a web page. But the
+                    fact is that a whole gamut of techniques and skills are involved in creating a web page design to
+                    give it the desired look. So, web design is about deciding on a lot of elements such as the layout,
+                    graphics, colors, fonts, structure, content, text styles, interactive features, imagery, interface,
+                    standardized code, etc.
+                </p>
+            </div>
+            <div class="r">
+                <h4>
+                    <li>
+                        Difference Between Fashion Designer And Fashion Stylist
+                    </li>
+                </h4>
+                <br>
+            </div>
+            <div id="IA">
+                <h2>Fashion Designing</h2>
+                <p>
+                    Fashion design is the art of applying design, aesthetics, clothing construction and natural beauty
+                    to clothing and its accessories. It is influenced by culture and different trends, and has varied
+                    over time and place. "A fashion designer creates clothing, including dresses, suits, pants, and
+                    skirts, and accessories like shoes and handbags, for consumers. He or she can specialize in
+                    clothing, accessory, or jewelry design, or may work in more than one of these areas.
+                </p>
+            </div>
+            <div id="IB">
+                <h2>Graphics Designing</h2>
+                <p>
+                    Graphic design is a profession,[2] applied art and academic discipline[3][4][5] whose activity
+                    consists in projecting visual communications intended to transmit specific messages to social
+                    groups, with specific objectives.[6] Graphic design is an interdisciplinary branch of design[1] and
+                    of the fine arts. Its practice involves creativity, innovation and lateral thinking using manual or
+                    digital tools, where it is usual to use text and graphics to communicate visually.
+                </p>
+            </div>
+        </div>
+        <div class="last">
+            <p>
+                I'm a Bignner and it was just my starting in code world...
+                <br>
+                I love to code and just try to learning something new out of the syllabus......
+            </p>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Mycart.com
+    </footer>
+</body>
+
+</html>

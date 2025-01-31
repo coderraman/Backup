@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple web - Page practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="1style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Rcoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Websites.html">Websites</a></li>
+                            <li><a class="dropdown-item" href="#">Landing Pages</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Desigining Logos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <!-- Form -->
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+                </form>
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-outline-success m-2" data-bs-toggle="modal"
+                        data-bs-target="#ContactModal">Contact</button>
+                </form>
+                <!-- Form -->
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+
+
+
+
+
+
+    <!-- Modal -->
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">Login to more info</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="ContactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ContactModalLabel">Contact for any Quary</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>+91 7303418901</h4>
+                    <br>
+                    <h6>ramanpal6435@gmail.com</h63>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Modal -->
+    <!-- Modal -->
+
+
+    <!-- carousel -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Bulb.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Make Build Your any Landing Page </h5>
+                    <p> Just in Few Hours</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="logo.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Make Design your Favourite logo.</h5>
+                    <p>Just send the picture</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="website.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Make Build Your user responsive website.</h5>
+                    <p>Just Give a Chance </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel -->
+
+    <!-- project Heading -->
+    <div class="div">
+        <h1>Projects</h1>
+    </div>
+    <!-- project Heading -->
+
+
+    <!-- ID Projetc -->
+    <div id="Project">
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Rcoder</strong>
+                        <h3 class="mb-0">Zym Website</h3>
+                        <div class="mb-1 text-body-secondary">Hope You like the work...</div>
+                        <p class="mb-auto">This is a First Website of my coding Journey...
+                            The client was a zym trainer he told me about his zym and he wanted to make it online on
+                            social media or any other platforms so i helped him and he gave me 3 months membership of
+                            zym to against the work.
+                        </p>
+                        <a href="https://theironclub-fitness.netlify.app"
+                            class="icon-link gap-1 icon-link-hover stretched-link">
+                            Click to see the project..
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="image">
+                            <img src="Health2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Project">
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Rcoder</strong>
+                        <h3 class="mb-0">Accounts related</h3>
+                        <div class="mb-1 text-body-secondary">Hope You like the work...</div>
+                        <p class="mb-auto">This is a Website of my
+                            The client was a Accounts he told me about his openion and he wanted to make a online
+                            website for being touch on social media or any other platforms so i helped him and he pay
+                            for this website.</p>
+                        <a href="https://alltaxbuddy-0123gstrreturn.netlify.app"
+                            class="icon-link gap-1 icon-link-hover stretched-link">
+                            Click to see the Project
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block"> 
+                        <div class="image">
+                            <img src="gst-retrun-filing.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Project">
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Rcoder</strong>
+                        <h3 class="mb-0">A Landing Page</h3>
+                        <div class="mb-1 text-body-secondary">Hope You like the work...</div>
+                        <p class="mb-auto">This is a Landing page for a student, he just wanted to make a social media
+                            post so, he asked me to do somethng so, I gave it to him...</p>
+                        <a href="https://butterflypictureof-life-0.netlify.app"
+                            class="icon-link gap-1 icon-link-hover stretched-link">
+                            This is First Page
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                        <hr>
+                        <a href="https://fire-picture0235code.netlify.app"
+                            class="icon-link gap-1 icon-link-hover stretched-link">
+                            This is Second Page
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="image">
+                            <img src="life.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ID Projetc -->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

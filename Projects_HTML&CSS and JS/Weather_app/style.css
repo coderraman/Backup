@@ -1,0 +1,103 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+  background-color: whitesmoke;
+  }
+  .Card {
+    /* border: 2px solid gold; */
+    max-width: 100%;
+    width: 49%;
+  background: radial-gradient(circle, rgba(0,0,0,1) 67%, rgba(238,174,202,1) 97%);
+    text-align: center;
+    padding: 23px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search input {
+    /* border: 2px solid firebrick; */
+    width: 50%;
+    padding: 11px;
+    outline: none;
+    /* border: 0; */
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  #search-Btn {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    margin: 1%;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  #search-Btn:hover{
+    background-color: #eeaeca;
+    color: black;
+    transition: all ease-in 0.1s;
+  }
+  .Temp {
+    color: white;
+    font-size: 4rem;
+    font-family: sans-serif;
+    margin-top: 1%;
+    font-weight: bolder;
+  }
+  .CityName {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: white;
+  }
+  .details {
+    /* border: 2px solid green; */
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    position: relative;
+  }
+  .details p {
+    font-size: 2.2rem;
+    color: white;
+    margin-top: 12px;
+    font-family: sans-serif;
+  }
+  .humaditiy ,.Wind {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  .fa-droplet {
+    position: absolute;
+    /* border: 2px solid hotpink; */
+    font-size: 4rem;
+    color: white;
+    margin-right: 69%;
+  }
+  .fa-wind {
+    position: absolute;
+    /* border: 2px solid hotpink; */
+    font-size: 4rem;
+    color: white;
+    margin-left: 69%;
+  }
+  

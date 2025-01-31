@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .carousel-inner {
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .carousel-inner img {
+        height: 85vh;
+        width: 100vw;
+    }
+
+    .carousel-item h5 {
+        color: black;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .menu h1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        font-family: 'Quicksand', sans-serif;
+
+    }
+
+    .menu img {
+        width: 8vw;
+        height: 10vh;
+        border-radius: 5px;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 25vh;
+    }
+
+    .c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .mb-3 input {
+        width: 45vw;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-primary-sticky">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cafe Desire</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pizza.html">Pizza</a></li>
+                                <li><a class="dropdown-item" href="/Cold drink.html">Cold Drink</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/Burger.html">Burger</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="home">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pizza1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pizza</h5>
+                        <p>Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened
+                            wheat-based dough topped with tomatoes, cheese, and often various ....</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="bur.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Burger</h5>
+                        <p>A hamburger, or simply burger, is a sandwich consisting of fillings—usually a patty of ground
+                            meat, typically beef—placed inside a sliced bun or bread roll..</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="cold.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cold Drink</h5>
+                        <p>A soft drink is a drink that usually contains water, a sweetener, and a natural and/or
+                            artificial flavoring. The sweetener may be a sugar, high-fructose corn syrup, fruit juice, a
+                            sugar substitute, or some combination of these. Soft drinks may also contain caffeine,
+                            colorings, preservatives, and/or other ingredients..</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <div class="menu">
+        <h1>our menu</h1>
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h5 class="display-4 fw-normal">Pizza</h5>
+            <p class="lead fw-normal">Pizza is a dish of Italian origin consisting of a usually round, flat base of
+                leavened
+                wheat-based dough topped with tomatoes, cheese, and often various ..</p>
+            <img src="piz1.jpg" alt="">
+        </div>
+       
+    <hr>
+    <div class="c">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="contact">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mobile No.</label>
+                <input type="Mobile" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <div class="about">
+        <span>
+            <h5>Near DIRD College, opposite CL Indian Public School, Holambi Khurd Village, Delhi, 110082</h5>
+
+            <h5>Phone +91 900 00 61547</h5>
+        </span>
+    </div>
+    <div class="footer">
+        <div class="card text-center">
+            <div class="card-header">
+                @copyright &copy;
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">All content are reserved</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

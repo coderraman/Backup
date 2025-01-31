@@ -1,0 +1,38 @@
+
+1720603036312: GET: /users 
+
+1720603044757: POST: /api/users 
+
+1720603050334: GET: /api/users 
+
+1720603183933: GET: /api/users: ::1 
+
+1720604628386: GET: /api/users: ::1 
+
+1720604650805: GET: /api/users: ::1 
+
+1720604851517: GET: /api/users: ::1 
+
+1720684888854: GET: /api: ::1 
+
+1720684906822: GET: /api/users: ::1 
+
+1720685005820: GET: /users: ::1 
+
+1720685022303: GET: /api/users/4: ::1 
+
+1720685041406: GET: /api/users: ::1 
+
+1720685051645: GET: /api/users/:2: ::1 
+
+1720685059704: GET: /api/users/4: ::1 
+
+1720685146663: GET: /api/user/4: ::1 
+
+1720685159967: GET: /api/user/501: ::1 
+
+1720685167736: GET: /api/user/125: ::1 
+
+1720685239269: GET: /api/uses: ::1 
+
+1720685313869: GET: /api/users: ::1 

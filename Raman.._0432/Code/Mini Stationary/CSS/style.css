@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* overflow: hidden; */
+    /* border: 2px solid green; */
+    background-image: url("Stationary.jpg");
+    font-family: 'Patrick Hand', cursive;
+    background-size: cover;
+}
+header {
+    background-color: rgb(30, 28, 28);
+    opacity: 0.9;
+    height: 8vh;
+    display: block;
+    /* position: sticky; */
+
+}
+#hm{
+position: fixed;
+background-color: black;
+width: 100vw;
+height: auto;
+top: 0%;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 20px 45px;
+    text-shadow: 2px 1px 1px red;
+}
+
+nav ul li :hover {
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+nav ul li {
+    float: left;
+}
+
+.Searchbar input {
+    border: 1px solid white;
+    overflow: hidden;
+    color: black;
+    font-weight: 300;
+    width: 20vw;
+    height: 3vh;
+    float: right;
+    position: absolute;
+    top: 3%;
+    right: 25%;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.btn1 button {
+    float: right;
+    width: 4vw;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border-radius: 2px;
+    position: relative;
+    top: 25px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.btn1 :hover {
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn2 button {
+    float: right;
+    width: 4vw;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border-radius: 2px;
+    position: relative;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.btn2 :hover {
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contant {
+    /* border: 2px solid hotpink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 0 23px;
+}
+
+#in-1 {
+    padding: 100px 50px;
+    margin: 5px auto;
+    height: 2.8vh;
+    width: 18vw;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-family: 'Baloo 2', cursive;
+    box-shadow: 15px 15px 15px black ;
+
+}
+
+#in-2 {
+    padding: 100px 50px;
+    margin: 5px auto;
+    height: 2.8vh;
+    width: 18vw;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-family: 'Baloo 2', cursive;
+    box-shadow: 15px 15px 15px black ;
+
+
+}
+
+#in-3 {
+    padding: 100px 50px;
+    margin: 5px auto;
+    height: 2.8vh;
+    width: 18vw;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-family: 'Baloo 2', cursive;
+    box-shadow: 15px 15px 15px black ;
+}
+
+.tt::before{
+    background: url("sch.jpg.jpg") no-repeat center center/cover;
+    content: "";
+    width: 99vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 11px;
+}
+.gg img {
+    /* display: block; */
+    border-radius: 8px;
+    position: relative;
+    top: 0px;
+    left: 30%;
+    height: 100vh;
+
+}
+
+.gg p {
+    margin: 45px;
+    padding: 0px 95px;
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    /* font-family: 'Times New Roman', Times, serif; */
+    position: relative;
+    top: 10%;
+    left: 10px;
+}
+.ty{
+    /* border: 2px solid darkblue; */
+    height: 50vh;
+}
+.ty h3 {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    right: 20%;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+    height: 40vh;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 20vh;
+}
+footer p{
+    font-size: 1.2rem;
+    padding: 23px 4px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .tt p{
+        display: flex;
+        position: relative;
+        top: 5%;
+        font-size: 2rem;
+        border: 2px solid red;
+        height: 15vh;
+    width: 75vw;
+        justify-content: center;
+    }
+    .contant{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    .searchbar {
+        border: 4px solid red;
+    }
+}

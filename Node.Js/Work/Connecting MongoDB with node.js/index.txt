@@ -1,0 +1,3 @@
+Http Header : Basically Http headers are an important part of API Request and response as they represent the meta deta associated with the Api request and response.. Its a kind of meta data
+
+Http Headers basically we can get the infromation about our data like X-Powered-By ,Content-Type, Content-Length, ETag, Connection etc..

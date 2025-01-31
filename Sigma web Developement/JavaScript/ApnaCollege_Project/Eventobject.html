@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventobject</title>
+  </head>
+  <button id="btn">Click Here!</button>
+
+  <body>
+    <script>
+      // Evenet object in JavaScript
+      // It's use a special object that has details about the event.
+      //   All Event handlers have access to the Event Objects Properties and Method!
+
+      let btn = document.querySelector("#btn");
+      btn.onclick=(evt)=>{
+        console.log(evt);
+        console.log(evt.type);
+        console.log(evt.target);
+        console.log(evt.clientX,evt.clientY);
+      }
+      
+    </script>
+  </body>
+</html>

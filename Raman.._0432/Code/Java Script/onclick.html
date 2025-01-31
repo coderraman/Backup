@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Practice</title>
+    <link rel="stylesheet" href="hello.js" class="js">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div {
+            height: 20vh;
+            background-color: black;
+            color: white;
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .div button {
+            font-size: 1.1rem;
+            background-color: red;
+            padding-left: 1%;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+
+        .div button:hover {
+            background-color: darkgray;
+        }
+
+        .div h1 {
+            font-size: 2.1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .holi {
+            height: 20vh;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .holi p {
+            font-size: 2.1rem;
+        }
+
+        .holi button {
+            margin: 12px;
+            font-size: 1.1rem;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .holi button:hover {
+            background-color: azure;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <h1>Kya Haal Hain</h1>
+        <br>
+        <button>Sab Badhiya</button>
+        <hr>
+    </div>
+    <br>
+    <div class="holi">
+        <p>Look Gyus Click on Down Button get Somthing for you!</p>
+        <br>
+        <hr>
+        <button>
+            <h3> Click Me
+            </h3>
+        </button>
+    </div>
+
+
+    <script>
+        let sabBadhiya = document.querySelector('button');
+        sabBadhiya.addEventListener('click', sabmast);
+        function sabmast() {
+            alert("Bohot Sahi !");
+        }
+    </script>
+
+    <script>
+        let ClickMe = document.querySelector('h3');
+        ClickMe.addEventListener('click', HappyHoli);
+        function HappyHoli() {
+            alert("Happy Holi Gyus !")
+        }
+    </script>
+
+    
+</body>
+
+</html>

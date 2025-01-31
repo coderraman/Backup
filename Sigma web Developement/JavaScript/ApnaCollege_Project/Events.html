@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events in JavaScript!</title>
+    <style>
+      b {
+        font-size: larger;
+        background-color: darkblue;
+        height: 10vh;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <!-- ondblclick Event*****------- This works on DoubleClick -->
+  <!-- <button
+    ondblclick="console.log('Clicked Two Times !'); alert ('Hey Coders! Second Time')"
+  >
+    Clicked Two Times!
+  </button> -->
+
+  <!-- oncmouseover Event
+  <b id="btn" onmouseover="console.log('Hello Coders!')">Hey</b>
+  <br> -->
+  <!-- onclick Event -->
+  <!-- <button onclick="console.log('Click'); alert('Hey Coders!')">
+    Click Here !
+  </button> -->
+
+  <button id="btn">Click Here!</button>
+  <p id="Comment">
+    Great Coder!
+  </p>
+
+  <body>
+    <script>
+      // Events :--------------- events is the change from state of an object !
+      // Events are fired to notify code of "interesting changes" that may affect of code execution!
+      // Here is the way to write event in Js
+      //  node.event = () =>{
+
+      //  }
+
+      let btn = document.querySelector("#btn");
+      btn.onclick = () => {
+        console.log(btn);
+        if ((btn = "String")) {
+          alert("Hello Coders");
+        } else {
+        }
+      };
+
+      let p = document.querySelector("#Comment");
+      p.onmouseover = () => {
+        console.log("you are great coder!");
+      }
+    </script>
+  </body>
+</html>

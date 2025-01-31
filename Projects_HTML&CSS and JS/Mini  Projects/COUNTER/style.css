@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .CounterApp {
+    background-color: rgb(64, 41, 13);
+    width: 30vw;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: 1px 2px 4px 2px black;
+
+  }
+  .CounterApp p{
+    width: 100%;
+    /* border: 2px solid khaki; */
+    font-size: 2rem;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    font-family: sans-serif;
+  }
+  .head {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 2%;
+  }
+  .btn button{
+    margin: 1%;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 11px 19px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 2.4rem;
+  }
+  .btn button:hover{
+    box-shadow: 2px 1px 0px 0px orange;
+    background-color: black;
+    color: whitesmoke;
+  }
+  .inputTask{
+    /* border: 2px solid hotpink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    margin: 1%;
+  }
+  .inputTask input{
+    padding: 11px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    margin-bottom: 1%;
+  }
+  #resetButton{
+    margin: 1%;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 4px 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem; 
+    width: 5vw;   
+  }
+  #resetButton:hover{
+    box-shadow: 2px 1px 0px 0px orange;
+    background-color: black;
+    color: whitesmoke;
+  }
+

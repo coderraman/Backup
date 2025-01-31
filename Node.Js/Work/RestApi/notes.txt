@@ -1,0 +1,21 @@
+
+We are making RestApi  in  - JSON 
+
+GET /user = HTML Document           --->"DONE"   
+GET /api/user = list all users      --->"DONE"
+
+GET /api/user1 = GET the user id 1   --->"DONE"
+GET /api/user2 = GET the user id 2   --->"DONE"
+
+Dyanamic Path parameters             --->"DONE"
+GETapi/user/:id                      --->"DONE"
+
+POST /api/user = Create New user
+
+PATCH /api/user = Edit the user with ID 1
+
+DELETE /api/user = Delete the user with ID 1
+
+
+Note: So For this Rest API Task we need a Edition WEbsite "Mockaroo.com" 
+It helps to genrate the fake data

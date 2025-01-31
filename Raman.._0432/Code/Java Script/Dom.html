@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color_Picker_Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 20vh;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .btn button {
+            width: 150px;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="h1">
+            Select Color
+        </div>
+        <div class="btn">
+            <Button>background-color</Button>
+        </div>
+        <div id="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro repudiandae tempora magni corrupti optio
+            blanditiis sequi rem nesciunt enim ratione!
+        </div>
+    </div>
+
+    <script>
+        let box = document.getElementById("box")
+        let btn = document.getElementsByClassName("btn")
+        let h1 = document.getElementsByClassName("h1")
+        box.addEventListener("Click", select)
+        function select() {
+            let red = Math.floor(Math.random() * 255);
+            let Blue = Math.floor(Math.random() * 255);
+            let black = Math.floor(Math.random() * 255);
+            console.log(Selectcolor);
+            h1.textContent = Selectcolor;
+            div.style.backgroundColor = Selectcolor
+
+
+        }
+
+    </script>
+</body>
+
+</html>

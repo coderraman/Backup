@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+
+<body>
+    <script>
+
+        //    Filter Method 
+        // we are given an array of marks of students. Filter Out of the Marks of the students that scored 90+!
+
+        // let array = [90, 95, 89, 98];
+
+        // let scored = array.filter((value) => {
+        //     return value > 90;
+        // })
+        // console.log(scored);
+
+
+        // Take a number n as input from user. Crate an araay of number from 1 to n.Use the reduce method to calculate sum of all number i array.
+        //   Use the reduce method to calculate the all products of the all number in array
+
+        let UserNum = prompt("Enter Number Here:")
+        let arr = [];
+        for (let index = 1; index <= UserNum; index++) {
+            arr[index] = index;
+        }
+        console.log(arr);
+
+        let finalSum = arr.reduce((suru,last)=>{
+            return suru + last;
+        })
+        console.log("Total of all Araay is ", finalSum);
+
+        let finalSum2 = arr.reduce((suru,last)=>{
+            return suru * last;
+        })
+        console.log("Factorial of all Araay is ", finalSum2);
+    </script>
+</body>
+
+</html>
